@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "elite-hangar-175306",
+  "private_key_id": "edebac817f4a7887d8330a873c78c03e7177c8df",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDKAlxOR1RsjuhC\nFQy+a/yMJhHBzkH3KJP5YXOUEgy+ghJos9Rc4Q5eKlvb2ED2vuv6j8GAoON+pxks\nwgeKip+pvPr289suiezd/tELkn8rzO5QcphYBKPprIB9/Rhjw6DtMSreCghIXyEI\n8GOIwYt7gZ/h3mokVDQdY4N0FxFatrO6dlytsOZj0P06VccnJwOZh1a9sTx3kcRz\nnsdCET3Tdp4xXDWpKqPEdabaA/e3E5IBT3zrkXeje+rjvQHwhL0PtHE813qYQrl9\nfyYslDtHsRWobiMha9qknziMzUAfgTqrJxkYW5L6/Pt0fOkyZPWhowniE6GAgxMn\nNZrNWLQZAgMBAAECggEAB+nIQmO+baM6e242KdZyle3e17Pz9xHenBACdkwvth3D\nyVi0CrBhPvSTVR0XTGMlvNK5Tofe6YTzskJmh7mO8BgAT8C1NxE9l2OmPjkOpMFa\nG4olqBsEbcCtZuINfMj6ypfYuUp00Rry4RYDnCWSyHOHNxKen04yHW2axmcp7Z71\nOJhtejCdKbCgjKfaZr+WkwGLjCqTcLNQ/Ynyu+P4MXo9rDbEnWNcOZaR0tuynTJC\n/31AjljqTyV4sxW3gkme2N9nfQMfsw+5qjWysKkGE/WNLUhl+yK2r8TTiymbtPru\nx9GEvqKD3dhQjfrQPwj1OiSFzf6RSQ/Cus7L1V4LZQKBgQDyYr39v1j+ZQzBAxoj\nPZZm1oMCFR/GP5JlPgnoMFPv0ebGNYejn8rlCzka70YgAOoLRYx0sFEus9Oli5aU\nY6V0K1UPc4na6iqjNYXCP2djCzPxIy5l77rCBb6p+RuJ8l+jc3Y9m+YTbeWP8b8M\nabQKlXRurIP/a0A7qlhbtIxOPQKBgQDVWwvAnhyKAYebpGiVEboplBzhfQ3ZT3r6\nTz1xEmrOEt6Up2Z/0pTofEeZXHFDJJY/vALYzkmeKeOrBpbmaFZ1cQyOMaWA8tT6\nvZrRdJhkKq0kowHWhNydnuabymYp48Zl23J6S8u6mRB/5gYPdKI7yKxa/UiBr9f9\nf43VDkpXDQKBgQDEMwtpb88gtTkar2Ej74FkIvWO5PyAZAsjapFoYl4/POAZx1DR\nMNJyjqAd3lscIsFQeG6WMfa04BlM4m30FajjHQRQaozHKE91JyjrsJkGghX8dibj\nmqbI0Q+h1KPnCMtDqn2mpyAY0BdHaj7kVFfJTWse/wQl53HqGhxFtyLvXQKBgHiz\nbU6nJFYez20J8fCDeuIS3NPkP3V1NYluUsApPyseGbXXjnE53Ow5gvgMCDeH90hP\nQP0Oly9XW2lh7PSkimUec4/uHkd5GWxQ38knQR9J1XIold2ahITXZHc2Zd3E8nSl\nVXpCbxs9hMwWgc80mKNhv8AqEl7r8DGFe+PQldXxAoGBAJJattfz9GLCDI/DFKQC\nKtVTcNgvRe9GBtHjMTIbr1a7jJxsVjwk+1HRe/5pJ30xXl23X6tp1MSGaYXGSDoK\nLxTcnb5Bd+zrtqwrbPtgy4NHFQeVDxLWk/FoqLwhp5OPRRi71ZG+yQJAma8nQKqW\noJUTB+SEh/uYEjUN/9dV+YEv\n-----END PRIVATE KEY-----\n",
+  "client_email": "ownser@elite-hangar-175306.iam.gserviceaccount.com",
+  "client_id": "115302089585517022730",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ownser%40elite-hangar-175306.iam.gserviceaccount.com"
+}

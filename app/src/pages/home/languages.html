@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Select Language</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-input type="text" placeholder="Search..." [(ngModel)]="searchText"></ion-input>
+  </ion-item>
+
+  <ion-list radio-group [(ngModel)]="selectedLanguage">
+    <ion-list-header>
+      All languages
+    </ion-list-header>
+    <ion-item *ngFor="let l of allLanguages | langfilter: searchText">
+      <ion-label>{{ l.name }}</ion-label>
+      <ion-radio value="{{ l.code }}"></ion-radio>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="selectLanguage()">
+        <i class="fa fa-language" aria-hidden="true"></i>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>{{ 'TITLE' | translate }} </h2>
+  <p>
+    {{ 'LINE1' | translate }}
+  </p>
+  <p>
+    <strong>{{ 'LINE2' | translate }} </strong>
+  </p>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="image">
+          <img src="assets/svgs/wheat.svg" />
+          <h2><i class="fa fa-times"></i></h2>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="image">
+          <img src="assets/svgs/bread.svg" />
+          <h2><i class="fa fa-times"></i></h2>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="image">
+          <img src="assets/svgs/grains.svg" />
+          <h2><i class="fa fa-times"></i></h2>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <p>
+    {{ 'LINE3' | translate }}
+  </p>
+  <p>{{ 'LINE4' | translate }}
+  </p>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="image">
+          <img src="assets/svgs/rice.svg" />
+          <h2><i class="fa fa-check"></i></h2>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="image">
+          <img src="assets/svgs/corn.svg" />
+          <h2><i class="fa fa-check"></i></h2>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="image">
+          <img src="assets/svgs/potatoes.svg" />
+          <h2><i class="fa fa-check"></i></h2>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <h3>{{ 'THANKYOU' | translate }}</h3>
+
+</ion-content>
