@@ -14,7 +14,7 @@ export class LanguagesPage implements OnInit {
     private selectedLanguage;
     private orgSelectedLanguage;
 
-    private searchText;
+    private searchText: string = '';
 
     constructor(public navCtrl: NavController, private navParams: NavParams, private events: Events) {
         this.allLanguages = availableLanguages.sort((a, b) => {
@@ -25,7 +25,7 @@ export class LanguagesPage implements OnInit {
 
         this.selectedLanguage = this.navParams.get('language');
         this.orgSelectedLanguage = this.navParams.get('language');
-        console.log('SELECTED LANG: ' + this.selectedLanguage);
+        this.searchText = '';
     }
 
     ngOnInit() { }
