@@ -8,6 +8,8 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { LanguagesPage } from '../pages/home/languages';
+import { WhatICantEatPage } from '../pages/home/whaticanteat';
+import { WhatICanEatPage } from '../pages/home/whaticaneat';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { LanguageFilterPipe } from './langfilter.pipe';
@@ -29,6 +31,8 @@ export function createTranslateLoader(http: Http) {
     ContactPage,
     HomePage,
     LanguagesPage,
+    WhatICantEatPage,
+    WhatICanEatPage,
     TabsPage,
     
     LanguageFilterPipe
@@ -49,6 +53,8 @@ export function createTranslateLoader(http: Http) {
     ContactPage,
     HomePage,
     LanguagesPage,
+    WhatICantEatPage,
+    WhatICanEatPage,
     TabsPage
   ],
   providers: [

@@ -6,6 +6,8 @@ import { availableLanguages, sysOptions } from './i18n.constants';
 import { TranslateService } from 'ng2-translate';
 
 import { LanguagesPage } from './languages';
+import { WhatICantEatPage } from './whaticanteat';
+import { WhatICanEatPage } from './whaticaneat';
 
 @Component({
   selector: 'page-home',
@@ -33,6 +35,18 @@ export class HomePage {
   
   selectLanguage() {
     this.navCtrl.push(LanguagesPage, { language: this.selectedLanguage })
+      .then((v) => { console.log('Pushed'); })
+      .catch(e => { console.error(e); });
+  }
+
+  showWhatICantEat() {
+    this.navCtrl.push(WhatICantEatPage, { language: this.selectedLanguage }, {animate: true, direction: 'forward'})
+      .then((v) => { console.log('Pushed'); })
+      .catch(e => { console.error(e); })
+  }
+
+  showWhatICanEat() {
+    this.navCtrl.push(WhatICanEatPage, { language: this.selectedLanguage }, {animate: true, direction: 'forward'})
       .then((v) => { console.log('Pushed'); })
       .catch(e => { console.error(e); })
   }

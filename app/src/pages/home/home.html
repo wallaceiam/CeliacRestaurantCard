@@ -10,62 +10,67 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>{{ 'TITLE' | translate }} </h2>
-  <p>
-    {{ 'LINE1' | translate }}
-  </p>
-  <p>
-    <strong>{{ 'LINE2' | translate }} </strong>
-  </p>
   <ion-grid>
     <ion-row>
       <ion-col>
-        <div class="image">
-          <img src="assets/svgs/wheat.svg" />
-          <h2><i class="fa fa-times"></i></h2>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div class="image">
-          <img src="assets/svgs/bread.svg" />
-          <h2><i class="fa fa-times"></i></h2>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div class="image">
-          <img src="assets/svgs/grains.svg" />
-          <h2><i class="fa fa-times"></i></h2>
-        </div>
+        <h2>{{ 'TITLE' | translate }} </h2>
       </ion-col>
     </ion-row>
-  </ion-grid>
-  <p>
-    {{ 'LINE3' | translate }}
-  </p>
-  <p>{{ 'LINE4' | translate }}
-  </p>
-  <ion-grid>
     <ion-row>
-      <ion-col>
-        <div class="image">
-          <img src="assets/svgs/rice.svg" />
-          <h2><i class="fa fa-check"></i></h2>
+      <ion-col class="dang block" (click)="showWhatICantEat()">
+        <div class="badge">
+          <span class="icon-stack fa-lg" aria-hidden="true">
+              <i class="fa fa-circle-thin icon-stack-3x "></i>
+              <i class="fa fa-circle icon-stack-2x"></i>
+              <i class="fa fa-exclamation icon-stack-1x"></i>
+          </span>
         </div>
+        <p>
+          {{ 'LINE1' | translate }}
+        </p>
+        <p>
+          <strong>{{ 'LINE2' | translate }} </strong>
+        </p>
       </ion-col>
-      <ion-col>
-        <div class="image">
-          <img src="assets/svgs/corn.svg" />
-          <h2><i class="fa fa-check"></i></h2>
-        </div>
+    </ion-row>
+    <ion-row>
+      <ion-col class="nodang block" (click)="showWhatICanEat()">
+        <p>
+          {{ 'LINE3' | translate }}
+        </p>
+        <p>{{ 'LINE4' | translate }}
+        </p>
       </ion-col>
-      <ion-col>
-        <div class="image">
-          <img src="assets/svgs/potatoes.svg" />
-          <h2><i class="fa fa-check"></i></h2>
-        </div>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="info block">
+
+        <!-- <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="image">
+            <img src="assets/svgs/rice.svg" />
+            <h2><i class="fa fa-check"></i></h2>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="image">
+            <img src="assets/svgs/corn.svg" />
+            <h2><i class="fa fa-check"></i></h2>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="image">
+            <img src="assets/svgs/potatoes.svg" />
+            <h2><i class="fa fa-check"></i></h2>
+          </div>
+        </ion-col>
+      </ion-row>
+      </ion-grid> -->
+        <h3>{{ 'THANKYOU' | translate }}</h3>
       </ion-col>
     </ion-row>
   </ion-grid>
-  <h3>{{ 'THANKYOU' | translate }}</h3>
 
 </ion-content>

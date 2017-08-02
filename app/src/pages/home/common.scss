@@ -1,0 +1,90 @@
+.image {
+    position: relative;
+    width: 100%;
+    min-height: 110px;
+    /* for IE 6 */
+    span {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      text-align: right;
+    //   font-size: 3.4rem;
+    //   width: 100%;
+    //   i.fa-times {
+    //     color: #f53d3d;
+    //   }
+    //   i.fa-ban {
+    //       color: #ff1744;
+    //   }
+    //   i.fa-check {
+    //     color: #00e676;
+    //   }
+    }
+  }
+
+.block {
+    color: #fff;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+.sm-block {
+    padding: 0px 0px;
+    .image {
+        padding: 4px 4px;
+    }
+    
+}
+.dang {
+    background-color: #ff1744;
+    .fa-stack {
+        color: #ff1744;
+        .fa-times-circle {
+            font-size: 1.8em;
+            top: 1.5px;
+        }
+    }
+}
+
+  .nodang {
+    background-color: #00e575; 
+    .fa-stack {
+        color: #00e575;
+        .fa-check-circle {
+            font-size: 1.8em;
+            top: 1.5px;
+        }
+    }
+  }
+
+  .info {
+    background-color: #00b0ff;
+  }
+
+.icon-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+
+    .icon-stack-1x,
+    .icon-stack-2x,
+    .icon-stack-3x {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .icon-stack-1x {
+        line-height: inherit;
+    }
+    .icon-stack-2x {
+        font-size: 1.5em;
+    }
+    .icon-stack-3x {
+        font-size: 2em;
+    }
+}
