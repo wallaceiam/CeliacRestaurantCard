@@ -1,1 +1,33 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content" id="menu-material">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div class="menu-header">
+      <!--material-design-background-->
+      <img class="user-avatar round" src="assets/svgs/nowheat.svg" />
+    </div>
+    <ion-list>
+      <ion-item *ngFor="let p of pages" menuClose (click)="openPage(p)">
+        {{p.title}}
+        <ion-item-group submenu *ngIf="p.children && p.children.length > 0">
+          <ion-item submenu-item *ngFor="let c of p.children" (click)="openPage(c)">{{c.title}}</ion-item>
+        </ion-item-group>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+  <ion-footer>
+    <div class="menu-footer">
+      <div class="name pull-left">&copy; Foodie.St {{ year }} </div>
+      <div class="e-mail pull-right"><a href="mailto: celiac@foodie.st">celiac@foodie.st</a></div>
+    </div>
+  </ion-footer>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

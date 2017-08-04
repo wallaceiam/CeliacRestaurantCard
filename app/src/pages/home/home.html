@@ -1,8 +1,11 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Celiac Restaurant Card</ion-title>
     <ion-buttons end>
-      <button ion-button icon-only (click)="selectLanguage()">
+      <button *ngIf="recentLanguageButtons" ion-button icon-only (click)="selectLanguage()">
         <i class="fa fa-language" aria-hidden="true"></i>
       </button>
     </ion-buttons>
@@ -35,6 +38,13 @@
     </ion-row>
     <ion-row>
       <ion-col class="nodang block" (click)="showWhatICanEat()">
+        <div class="badge">
+          <span class="icon-stack fa-lg" aria-hidden="true">
+              <i class="fa fa-circle-thin icon-stack-3x "></i>
+              <i class="fa fa-circle icon-stack-2x"></i>
+              <i class="fa fa-check icon-stack-1x"></i>
+          </span>
+        </div>
         <p>
           {{ 'LINE3' | translate }}
         </p>
@@ -45,29 +55,13 @@
 
     <ion-row>
       <ion-col class="info block">
-
-        <!-- <ion-grid>
-      <ion-row>
-        <ion-col>
-          <div class="image">
-            <img src="assets/svgs/rice.svg" />
-            <h2><i class="fa fa-check"></i></h2>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div class="image">
-            <img src="assets/svgs/corn.svg" />
-            <h2><i class="fa fa-check"></i></h2>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div class="image">
-            <img src="assets/svgs/potatoes.svg" />
-            <h2><i class="fa fa-check"></i></h2>
-          </div>
-        </ion-col>
-      </ion-row>
-      </ion-grid> -->
+        <div class="badge">
+          <span class="icon-stack fa-lg" aria-hidden="true">
+              <i class="fa fa-circle-thin icon-stack-3x "></i>
+              <i class="fa fa-circle icon-stack-2x"></i>
+              <i class="fa fa-info icon-stack-1x"></i>
+          </span>
+        </div>
         <h3>{{ 'THANKYOU' | translate }}</h3>
       </ion-col>
     </ion-row>

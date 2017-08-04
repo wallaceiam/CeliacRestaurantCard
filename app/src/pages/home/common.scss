@@ -37,9 +37,9 @@
     
 }
 .dang {
-    background-color: #ff1744;
+    background-color: color($colors, p);
     .fa-stack {
-        color: #ff1744;
+        color: color($colors, p);
         .fa-times-circle {
             font-size: 1.8em;
             top: 1.5px;
@@ -48,9 +48,9 @@
 }
 
   .nodang {
-    background-color: #00e575; 
+    background-color: color($colors, s); 
     .fa-stack {
-        color: #00e575;
+        color: color($colors, s);
         .fa-check-circle {
             font-size: 1.8em;
             top: 1.5px;
@@ -58,9 +58,39 @@
     }
   }
 
-  .info {
-    background-color: #00b0ff;
-  }
+.info {
+    background-color: color($colors, t);
+}
+
+.badge {
+  position: absolute;
+    right: 12px;
+    top: -16px;
+}
+
+.info {
+    .badge  {
+        .fa-circle {
+            color: color($colors, t);
+        }
+    }
+} 
+
+.dang {
+    .badge  {
+        .fa-circle {
+            color: color($colors, p);
+        }
+    }
+} 
+
+.nodang {
+    .badge  {
+        .fa-circle {
+            color: color($colors, s);
+        }
+    }
+} 
 
 .icon-stack {
     position: relative;
@@ -79,10 +109,11 @@
         text-align: center;
     }
     .icon-stack-1x {
-        line-height: inherit;
+        line-height: 2em;
     }
     .icon-stack-2x {
-        font-size: 1.5em;
+        font-size: 1.6em;
+        top: 0.1em;
     }
     .icon-stack-3x {
         font-size: 2em;
