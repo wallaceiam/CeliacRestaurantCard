@@ -6,7 +6,7 @@
     <ion-title>Celiac Restaurant Card</ion-title>
     <ion-buttons end>
       <button *ngIf="recentLanguageButtons" ion-button icon-only (click)="selectLanguage()">
-        <i class="fa fa-language" aria-hidden="true"></i>
+        <i class="fa fa-language" style="min-width: 32px;" aria-hidden="true"></i>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -28,9 +28,9 @@
               <i class="fa fa-exclamation icon-stack-1x"></i>
           </span>
         </div>
-        <p>
+        <p><strong>
           {{ 'LINE1' | translate }}
-        </p>
+        </strong></p>
         <p>
           <strong>{{ 'LINE2' | translate }} </strong>
         </p>
@@ -45,11 +45,12 @@
               <i class="fa fa-check icon-stack-1x"></i>
           </span>
         </div>
-        <p>
+        <p><strong>
           {{ 'LINE3' | translate }}
-        </p>
-        <p>{{ 'LINE4' | translate }}
-        </p>
+        </strong></p>
+        <p><strong>
+          {{ 'LINE4' | translate }}
+        </strong></p>
       </ion-col>
     </ion-row>
 
@@ -62,6 +63,7 @@
               <i class="fa fa-info icon-stack-1x"></i>
           </span>
         </div>
+        <p>{{ 'LINE5' | translate }}</p>
         <h3>{{ 'THANKYOU' | translate }}</h3>
       </ion-col>
     </ion-row>
