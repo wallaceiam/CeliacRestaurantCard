@@ -46,13 +46,16 @@ $colors: (
   light:      #f4f4f4,
   dark:       #222,
 
-  p: #ff1744,
-  pl: #ff616f,
-  pd: #c4001d,
+   p: #c62828,
+  pl: #ff5f52,
+  pd: #8e0000,
 
-  s: #00e676,
+  s: #2e7d32,
+  sd: #005005,
+  sl: #60ad5e,
 
-  t: #2979ff
+  t: #1565c0
+
 );
 
 $toolbar-background: color($colors, p);

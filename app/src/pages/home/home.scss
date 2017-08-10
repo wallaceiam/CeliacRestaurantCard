@@ -6,19 +6,19 @@ page-home {
 
 page-whaticanteat {
   .toolbar-background {
-    background-color: #c4001d;
+    background-color: color($colors, pd);
   }
   .content {
-    background-color: #ff1744;
+    background-color: color($colors, p);
   }
   
 }
 
 page-whaticaneat {
   .toolbar-background {
-    background-color: #00b248;
+    background-color: color($colors, sd)
   }
   .content {
-    background-color: #00e676;
+    background-color: color($colors, s);
   }
 }
